@@ -5,7 +5,7 @@ let drawTriangle = function(numLines) {
   console.log("new attempt");
   let numTry = 1
   let numPrint = "#"
-  let numPrintLn = "#\n"
+  let numPrintLn = "\n"
   if (numLines < 1) {
 
     console.log("error, must be greater than zero")
