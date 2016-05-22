@@ -1,5 +1,4 @@
 let sizeElement = document.getElementById("size");
-let size = parseInt(sizeElement.value);
 
 let drawTriangle = function(numLines) {
   console.log("new attempt");
@@ -17,4 +16,9 @@ let drawTriangle = function(numLines) {
     }
   }
 }
-drawTriangle(size);
+
+sizeElement.onchange = function() {
+  let size = parseInt(sizeElement.value);
+  drawTriangle(size);
+};
+
