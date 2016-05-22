@@ -18,11 +18,12 @@ let drawTriangle = function(numLines) {
     }
   }
   
-  console.log(numPrintLn);
+  return numPrintLn;
 }
 
 sizeElement.onchange = function() {
   let size = parseInt(sizeElement.value);
-  drawTriangle(size);
+  let triangle = drawTriangle(size);
+  poundsElement.innerHTML = triangle;
 };
 
