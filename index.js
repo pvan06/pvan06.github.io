@@ -4,8 +4,8 @@ let poundsElement = document.getElementById("pounds");
 let drawTriangle = function(numLines) {
   console.log("new attempt");
   let numTry = 1
-//  let numPrint = "#"
-  let numPrintLn = "\n"
+  let numPrint = "#"
+  let numPrintLn = ""
   if (numLines < 1) {
 
     console.log("error, must be greater than zero")
@@ -13,8 +13,8 @@ let drawTriangle = function(numLines) {
 
     while (numTry <= numLines) {
       numTry = numTry + 1
-//      numPrint = numPrint+"#"
-      numPrintLn = "#"+numPrintLn
+      numPrintLn = numPrintLn+numPrint+"\n"
+      numPrint = numPrint+"#"
     }
   }
   
